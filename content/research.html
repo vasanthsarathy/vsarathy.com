@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+<body>
+    <div class="row">
+        <div class="navbar navbar-default navbar-static-top">
+            <ul class="nav navbar-nav">
+                <li class="projectlist" id="overview"><a href="#">Overview</a></li>
+                <li class="projectlist" id="affordances"><a href="#">Affordances</a></li>
+                <li class="projectlist" id="uncertainty"><a href="#">Learning under Uncertainty</a></li>
+                <li class="projectlist" id="macgyver"><a href="#">MacGyver Robots</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row" id="rowcontent">
+        <!-- Main Content Goes hee -->
+        <div id="researchcontent">
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#researchcontent").load("projects/overview.html");
+            $("#overview").addClass("active");
+            $('.projectlist').click(function() {
+                $('.projectlist').removeClass("active");
+                $(this).addClass("active");
+            });
+            $("#overview").click(function() {
+                $("#researchcontent").load("projects/overview.html");
+            });
+            $("#affordances").click(function() {
+                $("#researchcontent").load("projects/affordances.html");
+            });
+            $("#uncertainty").click(function() {
+                $("#researchcontent").load("projects/uncertainty.html");
+            });
+            $("#macgyver").click(function() {
+                $("#researchcontent").load("projects/macgyver.html");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

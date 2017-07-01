@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vasanth Sarathy</title>
+    <!-- Normalize -->
+<!--    <link type="text/css" rel="stylesheet" href="css/normalize.css" />-->
+    
+    <!-- Style stuff for bibtex-js-->
+     <style>
+        html,
+        body,
+        span,
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 17px;
+        }
+        bibtex {
+            display: none;
+        }
+        .searchbar {
+            margin-left: 0px;
+        }
+        #bibtex_errors {
+            margin-top: 10px;
+            color: red;
+        }
+        h1.header {
+            margin-left: 8px;
+        }
+        h1.YEAR {
+            font-size: 17px;
+            font-weight: bold;
+            display: inline;
+            margin-left: 8px;
+        }
+    </style>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom stye file -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <bibtex src="content/refs.bib"></bibtex>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="padding-left:0.5em">Vasanth Sarathy</h1>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Page Menu &nbsp; <span class="glyphicon glyphicon-arrow-right"></span> </span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="navlist" id="bio"><a href="#">Bio</a></li>
+                                <li class="navlist" id="research"><a href="#">Research Projects</a></li>
+                                <li class="navlist" id="pubs"><a href="#">Publications</a></li>
+                                <li class="navlist" id="cv"><a href="#" id="cv">CV</a></li>
+                                <!--/.nav-collapse -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Goes here -->
+            <div class="col-sm-9" id="content">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <p style="padding-left:1em; color:grey"> &copy; 2017 Vasanth Sarathy | <a href="index.html">Home</a> | <a href="http://www.tufts.edu" target="_blank">Tufts University</a> | <a href="https://hrilab.tufts.edu/" target="_blank">HRI Lab</a> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!-- BibTex-JS stuff -->
+    <script type="text/javascript" src="htstps://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.navlist').click(function() {
+                $('.navlist').removeClass("active");
+                $(this).addClass("active");
+            });
+            $("#bio").click(function() {
+                $("#content").load("content/bio.html");
+            });
+            $("#research").click(function() {
+                $("#content").load("content/research.html");
+            });
+            $("#pubs").click(function() {
+                $("#content").load("content/pubs.html");
+            });
+            $("#cv").click(function() {
+                $("#content").load("content/cv.html");
+            });
+            $("#news").click(function() {
+                $("#content").load("content/news.html");
+            });
+            $("#contact").click(function() {
+                $("#content").load("content/contact.html");
+            });
+        });
+
+        $(window).on("load", function() {
+            $("#content").load("content/bio.html");
+            $('#bio').addClass("active");
+        });
+    </script>
+    
+
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+<!--    <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>-->
+
+    
+
+    
+</body>
+
+</html>
