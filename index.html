@@ -9,44 +9,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Vasanth Sarathy</title>
     <!-- Normalize -->
-<!--    <link type="text/css" rel="stylesheet" href="css/normalize.css" />-->
-    
-    <!-- Style stuff for bibtex-js-->
-     <style>
-        html,
-        body,
-        span,
-        h1 {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 17px;
-        }
-        bibtex {
-            display: none;
-        }
-        .searchbar {
-            margin-left: 0px;
-        }
-        #bibtex_errors {
-            margin-top: 10px;
-            color: red;
-        }
-        h1.header {
-            margin-left: 8px;
-        }
-        h1.YEAR {
-            font-size: 17px;
-            font-weight: bold;
-            display: inline;
-            margin-left: 8px;
-        }
-    </style>
-    
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom stye file -->
     <link href="css/custom.css" rel="stylesheet">
-    
-    <bibtex src="content/references.bib"></bibtex>
+
 </head>
 
 <body>
@@ -99,8 +68,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
-    <!-- BibTex-JS stuff -->
-    <script type="text/javascript" src="htstps://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -109,21 +76,28 @@
                 $(this).addClass("active");
             });
             $("#bio").click(function() {
+                $("#content").html('');
                 $("#content").load("content/bio.html");
             });
             $("#research").click(function() {
+                $("#content").html('');
                 $("#content").load("content/research.html");
             });
             $("#pubs").click(function() {
-                $("#content").load("content/pubsq.html");
+                //                $("#content").load("content/pubsq.html");
+                $("#content").html('');
+                postscribe('#content', '<script src="https://bibbase.org/show?bib=http%3A%2F%2Fvsarathy.com%2Fcontent%2Freferences.bib&jsonp=1"><\/script>>');
+
             });
             $("#cv").click(function() {
+                $("#content").html('');
                 $("#content").load("content/cv.html");
             });
             $("#news").click(function() {
                 $("#content").load("content/news.html");
             });
             $("#contact").click(function() {
+                $("#content").html('');
                 $("#content").load("content/contact.html");
             });
         });
@@ -133,24 +107,15 @@
             $('#bio').addClass("active");
         });
     </script>
-    
 
-
-
-    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
-<!--    <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
 
-    
 
-    
 </body>
 
 </html>
