@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head></head>
+    <head>
+<!--     <link type="text/css" rel="stylesheet" href="css/normalize.css" />-->
+    </head>
 <body>
     <div class="row">
         <div class="navbar navbar-default navbar-static-top">
@@ -19,24 +21,27 @@
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
     <script>
         $(document).ready(function() {
             $("#researchcontent").load("projects/overview.html");
             $("#overview").addClass("active");
-            $('.projectlist').click(function() {
+            $(document).on('click','.projectlist', function() {
                 $('.projectlist').removeClass("active");
                 $(this).addClass("active");
             });
-            $("#overview").click(function() {
+            $(document).on('click','#overview',function() {
                 $("#researchcontent").load("projects/overview.html");
             });
-            $("#affordances").click(function() {
+            $(document).on('click','#affordances', function() {
                 $("#researchcontent").load("projects/affordances.html");
             });
-            $("#uncertainty").click(function() {
+            $(document).on('click','#uncertainty', function() {
                 $("#researchcontent").load("projects/uncertainty.html");
             });
-            $("#macgyver").click(function() {
+            $(document).on('click','#macgyver', function() {
                 $("#researchcontent").load("projects/macgyver.html");
             });
         });

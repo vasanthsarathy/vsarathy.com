@@ -17,3 +17,6 @@
     padding-bottom: 12px;
   }
 }
+
+/*#bibbase_header a[onclick="groupby('downloads')"] { display: none; }*/
+/*:not(.bibbase)*/
