@@ -43,7 +43,7 @@
                         <div class="navbar-collapse collapse sidebar-navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li class="navlist" id="bio"><a href="index.html">Bio</a></li>
-                                <li class="navlist" id="research"><a href="research.html">Research Projects</a></li>
+                                <li class="navlist" id="research"><a href="research.html">Research </a></li>
                                 <li class="navlist" id="pubs"><a href="publications.html">Publications</a></li>
                                 <li class="navlist" id="cv"><a href="cv.html" id="cv">CV</a></li>
                                 <!--/.nav-collapse -->
@@ -57,12 +57,23 @@
             <div class="col-sm-9" id="content">
                 <img height="250" src="media/img/profilepic.jpg" style="float: left; margin-right: 15px; margin-bottom: 15px;" />
 
-                <p align="justify">I am a PhD student in Computer Science and Cognitive Science at <strong>Tufts University</strong>. My research is in <strong>Artificial Intelligence, Robotics and Machine Ethics</strong>. What cognitive abilities make us clever, resourceful and creative problem solvers? Should we endow robots with these abilities? If so, how?</p>
+                <p align="justify">I am a dual PhD student in Computer Science and Cognitive Science at <a href="http://cogsci.tufts.edu/" target="_blank"><strong>Tufts University</strong></a>. My research is in <strong>Artificial Intelligence, Robotics and Machine Ethics</strong>. What makes us creative problem solvers? How do we design robots to be resourceful and creative? What are the legal, ethical and moral implications of clever robots?</p>
 
-                <p align="justify">I also enjoy drawing <strong>cartoons</strong>. Some of my work can be seen on <a href="http://www.legallydrawn.com" target="_blank">Legally Drawn</a>, cartoons poking fun at law and lawyers.
+                <p align="justify">On the side, I enjoy drawing <strong>cartoons</strong>. Some of my work can be seen on <a href="http://www.legallydrawn.com" target="_blank">Legally Drawn</a>, cartoons poking fun at law and lawyers.</p>
 
+                <p align="justify">I am also a licensed patent <strong>lawyer</strong> and have practiced various aspects of intellectual property law at <a href="http://www.ropesgray.com" target="_blank">Ropes and Gray</a> for nearly a decade. During this time, I helped inventors obtain patents for their ideas, and worked with companies and universities on developing strategies for strengthening, growing and transacting their IP portfolios. I have a J.D. from <a href="https://www.bu.edu/law/" target="_blank"><strong>Boston University School of Law</strong></a>, an M.S. in Electrical Engineering and Computer Science at <a href="http://web.mit.edu" target="_blank"><strong>MIT</strong></a>, and a B.S. in Electrical Engineering from the <a href="https://www.uark.edu/" target="_blank"><strong>University of Arkansas</strong></a>.</p>
+
+                <p><strong>Contact:</strong> vasanth dot sarathy at tufts dot edu</p>
+
+                <!--                    maybe put some logos-->
+
+                <!--
+                    
                     <p><strong>Background&nbsp;</strong></p>
-                    <p align="justify">I grew up in Muscat, Oman and moved to the United States for college. After graduating summa cum laude in Electrical Engineering from the <strong>University of Arkansas</strong> in 2003, I studied at MIT, where I conducted research in the mathematical modeling of printed circuit board insulation at the Laboratory for Electromagnetic and Electronic Systems (<a href="http://www.rle.mit.edu/lees/" target="_blank">LEES @ RLE</a>). I received a Masters Degree in Electrical Engineering and Computer Science from <strong>MIT</strong> in 2005. From 2005 to 2013, I worked as an Intellectual Property <strong>Lawyer</strong> at Ropes &amp; Gray, during which time I concurrently obtained a JD from <strong>Boston University School of Law</strong>. My love for science, math, the human thought process and creativity pulled me back into the world of scientific research.</p>
+                    <p align="justify">I grew up in Muscat, Oman and moved to the U.S. for college. After graduating summa cum laude in Electrical Engineering from the <strong>University of Arkansas</strong> in 2003, I studied at MIT, where I conducted research at the Research Laboratory for Electronics (<a href="http://www.rle.mit.edu/lees/" target="_blank">LEES @ RLE</a>). I received a Masters Degree in Electrical Engineering and Computer Science from <strong>MIT</strong> in 2005. From 2005 to 2013, I worked as an Intellectual Property <strong>Lawyer</strong> at Ropes &amp; Gray, during which time I concurrently obtained a JD from <strong>Boston University School of Law</strong>.</p>
+
+                    <p> My love for science, math, the human thought process and creativity drew me back into scientific research.</p>
+-->
 
             </div>
         </div>
@@ -73,6 +84,20 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.navlist').click(function() {
+                $('.navlist').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        $(window).on("load", function() {
+            $('#bio').addClass("active");
+        });
+
+    </script>
 
 </body>
 
