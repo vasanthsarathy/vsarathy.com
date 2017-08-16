@@ -19,7 +19,10 @@
     }
 }
 body {
-    font-family: 'proxima-nova';
+    font-family: proxima-nova-n9, proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.7;
 }
 
 /*#bibbase_header a[onclick="groupby('downloads')"] { display: none; }*/
