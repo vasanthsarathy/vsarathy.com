@@ -1,0 +1,117 @@
+Home page:
+
+I am a Ph.D. candidate in Computer Science and Cognitive Science at Tufts
+University, advised by Matthias Scheutz and Dan Dennett. My research focuses on
+computational approaches to understanding human intelligence and creativity. I
+study how our drive to continually make sense of the world guides our
+perception of it and our behavior in it. At the core of this capability lies a
+vast store of hidden knowledge (social, causal etc.) that we bring to bear.  A better understanding
+of how we use this knowledge to make sense of the world will help us design
+more effective and more ethical artificial intelligence systems.
+
+I previously received an M.S. in Electrical Engineering and Computer Science
+from MIT and a J.D. from Boston University School of Law. Prior to coming to
+Tufts, I was a lawyer and practiced Intellectual Property law for nearly a
+decade at Ropes & Gray in Boston.
+
+On the side, I enjoy drawing cartoons. Some of my work can be seen on Legally
+Drawn, cartoons poking fun at law and lawyers. 
+
+
+My Research. 
+
+Our ability to quickly and continually make sense of the complex and
+changing world around us is astounding. It is key to our intelligence and
+creativity. We do not necessarily process each and
+every thing we see or hear, but instead, try to understand what relevant tidbits of
+information mean to us. However, it is challenging to know what information we
+bring to bear and how exactly this information is used to establish meaning. It
+is challenging because much of this information is elusive and hidden in our
+collective minds. My research goal is to uncover the computational nature of
+these hidden assumptions ("dark knowledge," (like dark matter)), and how we make
+and break them. 
+
+My research is motivated by three key questions:
+
+1. How can these hidden assumptions be represented (in computational terms)
+such that they can be learned flexibly in a variety of ways (incl. under
+uncertainty) and invoked at a moment's notice?
+2. What is the role of these hidden assumptions in sense-making? How are these
+assumptions used to resolve perceptual (linguistic and visual) ambiguity and
+assist with decision making and action-selection?
+3. How do we know when these assumptions need to be broken and how do we break
+them?  
+
+AI has seen rapid progress in recent years, especially with the development of
+new deep neural network architectures. However, despite these efforts,
+there are many open questions about how to computationalize core human
+intelligence capabilities of compositionality, non-monotonic reasoning with symbolic
+knowledge, social intelligence and open-world discovery of new knowledge.
+Central to my research has been the development and application of techniques
+in knowledge representation and reasoning as well as in uncertainty processing
+that have shown promise. These techniques help us elucidate the more abstract
+computational principles associated with making and breaking assumptions that
+are at play during sense-making. 
+
+Key Results: 
+
+1). Non-monotonic reasoning for language understanding
+Traditionally, natural language processing (NLP) is thought of as a set of
+processes arranged in a pipeline manner whereby syntactic properties are
+extracted before semantics, which in turn occurs before pragmatics. However,
+there has been some evidence in psycholinguistics as well as in cognitive
+neuroscience of language to suggest that these processes might not be linear
+and sequential in this manner. I have begun exploring how language
+understanding (and particularly resolving linguistic ambiguity) can be achieved
+by a more holistic constraint satisfaction process. My group has shown various
+proof of concepts to suggest that this approach can help resolve pronouns and
+indirect speech acts. 
+
+Representative papers
+- Anaphora
+- ISA
+
+2). Representing and reasoning with Social norms
+There are nearly no human interactions that do not assume at least some amount
+of social norms. But, what are these social norms, how are they represented and
+how are they used? I explored how social norms are used when deciding how to
+use objects (e.g., how to grab a knife when using it versus when passing it to
+someone -- a situation where social safety norms apply) and showed how this
+form of social intelligence can be computationalized. Social norms are one part
+of the larger fabric of norm-related aspects that are highly pervasive in
+human-human interaction. I showed that centuries old legal precedent can help
+us categorize and organize our thinking about norms and provide some guidance
+on how these legal principles can guide the development of more natural
+human-robot interactions. At the core of social intelligence is the questions
+of how norms are rperesented. I showed that human norms are context sensitive
+and developed computational techniques for learning them under uncertainty.
+
+
+Representative papers
+- Affordance journal
+- THRI
+- Cog Sci
+
+3). Creative problem solving
+Humans can, with some mental effort, break their own assumptions allowing them
+room to assimilate new knowledge and make new discoveries. The processes
+underlying creative cognition remains largely unknown. There has been over a
+century of psychology and neuroscience research in insight problem-solving,
+attempting to understand how humans reframe problems or reconstruct their
+mental representations. Modern AI systems are able to generate novel works of
+art and music, but they cannot solve problems that require out-of-the-box
+thinking. My group has begun making some early progress towards formalizing
+creative problem solving computationally. Doing so has a two-fold benefit: (1)
+allows us construct potentially solvable computer science problems, and (2)
+provides a theoretical foundation for constructing stimuli for human-subject
+experiments. 
+
+Representative papers
+- Macgyver acs
+- Frontiers
+- New AAAI
+
+Details
+Research Statement
+
+

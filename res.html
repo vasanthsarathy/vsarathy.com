@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vasanth Sarathy</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--     Custom stye file -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="padding-left:0.5em">VASANTH SARATHY</h1>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Page Menu &nbsp; <span class="glyphicon glyphicon-arrow-right"></span> </span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="navlist" id="bio"><a href="index.html">Bio</a></li>
+                                <li class="navlist" id="research"><a href="res.html">Research </a></li>
+                                <li class="navlist" id="pubs"><a href="publications.html">Publications</a></li>
+                                <li class="navlist" id="cv"><a href="cv.html" id="cv">CV</a></li>
+                                <!--/.nav-collapse -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Goes here -->
+            <div class="col-sm-9" id="content">
+				<p align="justify"> </p>
+				
+				<h2>Research Program </h2>
+				<p align="justify"> Our ability to quickly and continually make sense of the complex and
+changing world around us is astounding. It is key to our intelligence and
+creativity. We do not necessarily process each and
+every thing we see or hear, but instead, try to understand what relevant tidbits of
+information mean to us. However, it is challenging to know what information we
+bring to bear and how exactly this information is used to establish meaning. It
+is challenging because much of this information is elusive and hidden in our
+collective minds. My research goal is to uncover the computational nature of
+these hidden assumptions ("dark knowledge," (like dark matter)), and how we make
+and break them.</p>
+
+				<p align="justify">My research is motivated by three key questions:</p>
+				<ol>
+					<li> How can these hidden assumptions be represented (in computational terms)
+such that they can be learned flexibly in a variety of ways (incl. under
+uncertainty) and invoked at a moment's notice?</li>
+					<li> What is the role of these hidden assumptions in sense-making? How are these
+assumptions used to resolve perceptual (linguistic and visual) ambiguity and
+assist with decision making and action-selection?</li>
+					<li> How do we know when these assumptions need to be broken and how do we break
+them?</li>
+				</ol>
+
+
+
+				<p align="justify"> AI has seen rapid progress in recent years, especially with the development of
+new deep neural network architectures. However, despite these efforts,
+there are many open questions about how to computationalize core human
+intelligence capabilities of compositionality, non-monotonic reasoning with symbolic
+knowledge, social intelligence and open-world discovery of new knowledge.
+Central to my research has been the development and application of techniques
+in knowledge representation and reasoning as well as in uncertainty processing
+that have shown promise. These techniques help us elucidate the more abstract
+computational principles associated with making and breaking assumptions that
+are at play during sense-making. </p>
+
+				<h2> Key Results </h2>
+				<h3> 1). Language Understanding can be aided by Reasoning </h3> 
+
+				<p align="justify"> Traditionally, natural language processing (NLP) is thought of as a set of
+processes arranged in a pipeline manner whereby syntactic properties are
+extracted before semantics, which in turn occurs before pragmatics. However,
+there has been some evidence in psycholinguistics as well as in cognitive
+neuroscience of language to suggest that these processes might not be linear
+and sequential in this manner. I have begun exploring how language
+understanding (and particularly resolving linguistic ambiguity) can be achieved
+by a more holistic constraint satisfaction process. My group has shown various
+proof of concepts to suggest that this approach can help resolve pronouns and
+indirect speech acts. </p>
+
+				<h4> Representative Papers </h4>
+
+				<ul>
+					<li> <a href="http://vsarathy.com/publications/pdfs/sarathy2019aaai.pdf" target="_blank">
+							<strong>Sarathy and Scheutz (2019, AAAI)</strong></a></li>
+				</ul>
+
+				<h3> 2). Social Intelligence: Representing and Reasoning with
+					Social Norms </h3>
+
+
+				<p align="justify">There are nearly no human interactions that do not assume at least some amount
+of social norms. But, what are these social norms, how are they represented and
+how are they used? I explored how social norms are used when deciding how to
+use objects (e.g., how to grab a knife when using it versus when passing it to
+someone -- a situation where social safety norms apply) and showed how this
+form of social intelligence can be computationalized. Social norms are one part
+of the larger fabric of norm-related aspects that are highly pervasive in
+human-human interaction. I showed that centuries old legal precedent can help
+us categorize and organize our thinking about norms and provide some guidance
+on how these legal principles can guide the development of more natural
+human-robot interactions. At the core of social intelligence is the questions
+of how norms are rperesented. I showed that human norms are context sensitive
+and developed computational techniques for learning them under uncertainty. </p>
+				
+				<h4> Representative Papers </h4>
+
+				<ul>
+					<li> <a href="http://vsarathy.com/publications/pdfs/sarathyetal16ieeej.pdf" target="_blank">
+							<strong>Sarathy and Scheutz (2016, IEEE CDS)</strong></a></li>
+				</ul>
+				
+				<h3> 3). Creative Problem Solving </h3>
+
+
+				<p align="justify"> Humans can, with some mental effort, break their own assumptions allowing them
+room to assimilate new knowledge and make new discoveries. The processes
+underlying creative cognition remains largely unknown. There has been over a
+century of psychology and neuroscience research in insight problem-solving,
+attempting to understand how humans reframe problems or reconstruct their
+mental representations. Modern AI systems are able to generate novel works of
+art and music, but they cannot solve problems that require out-of-the-box
+thinking. My group has begun making some early progress towards formalizing
+creative problem solving computationally. Doing so has a two-fold benefit: (1)
+allows us construct potentially solvable computer science problems, and (2)
+provides a theoretical foundation for constructing stimuli for human-subject
+experiments. </p>
+					
+				<h4> Representative Papers </h4>
+
+				<ul>
+					<li> <a href="http://vsarathy.com/publications/pdfs/sarathy2018MacGyverACS.pdf" target="_blank">
+							<strong>Sarathy and Scheutz (2018, ACS)</strong></a></li>
+				</ul>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <p style="padding-left:1em; color:grey"> &copy; 2019 Vasanth Sarathy | <a href="index.html">Home</a> | <a href="http://www.tufts.edu" target="_blank">Tufts University</a> | <a href="https://hrilab.tufts.edu/" target="_blank">HRI Lab</a> |                 </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.navlist').click(function() {
+                $('.navlist').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        $(window).on("load", function() {
+            $('#bio').addClass("active");
+        });
+
+    </script>
+
+</body>
+
+</html>
